@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Roboto:ital@0;1&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Lora&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Lora&family=PT+Sans+Narrow&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Anton&family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Lora&family=PT+Sans+Narrow&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bacasime+Antique&family=Lato:ital,wght@0,400;1,300&family=Lora&family=PT+Sans+Narrow&family=Rajdhani:wght@300&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');  
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bacasime+Antique&family=Cormorant:wght@300&family=Lato:ital,wght@0,400;1,300&family=Lora&family=PT+Sans+Narrow&family=Rajdhani:wght@300&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bacasime+Antique&family=Cormorant:wght@300&family=Lato:ital,wght@0,400;1,300&family=Lora&family=Montserrat:wght@100&family=PT+Sans+Narrow&family=Rajdhani:wght@300&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bacasime+Antique&family=Cormorant:wght@300&family=Lato:ital,wght@0,400;1,300&family=Lora&family=Montserrat:wght@100;300&family=PT+Sans+Narrow&family=Rajdhani:wght@300&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+
+*{
+    padding : 0;
+    margin : 0;
+    font-family: 'Lato', sans-serif;;
+}
+
+html{
+    font-size : 10px;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Nav Bar............................................................... */
+
+body > .nav-bar{
+    width : 100%;
+    height : 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(69, 14, 46, 0.603);
+    position: fixed;
+    top : 0;
+    left :0;
+
+    z-index: 10000;
+}
+
+/* Nav Bar Name Side..................................................... */
+
+.nav-bar > .myname{
+    text-transform: uppercase;
+    /* text-shadow: 0px 1px 5px #f4f4f4; */
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color : rgb(40, 229, 235);
+    margin-left : 10px;
+}
+
+.nav-bar > .myname span{
+    color : rgb(178, 30, 10);
+}
+
+/* Nav Bar List SIDE......................................................... */
+
+.nav-bar > .nav-list{
+    width : 60%;
+    margin-right : 1rem;
+    margin-left : 0.7rem;
+}
+
+.nav-bar > .nav-list ul{
+
+   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: pink; */
+}
+
+.nav-bar > .nav-list ul li{
+    list-style: none;
+}
+
+.nav-bar > .nav-list ul a{
+    font-size: 2rem;
+    color : rgb(25, 155, 187);
+}
+
+.nav-bar > .nav-list ul a :hover{
+    padding : 4px;
+    text-shadow: 2px 2px 6px rgb(69, 105, 188);
+    /* #FF0000; */
+    border: 1px solid #A5F1E9;
+    border-radius: 10px;
+    color: #A5F1E9;
+    transition: all 0.1s ;
+
+
+}
+
+
+
+
+/* Background Wallpaper................................................... */
+
+.bgcolor{
+
+    background-image: url('./imgs/wallpaperflare.com_wallpaper\ \(5\).jpg');
+
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position-y:top center;
+    /* background-position-x : right; */
+
+}
+#home{
+
+    width : 100%;
+    height : 100vh;
+
+    /* width : 100%;
+    height : 100%vh; */
+    background-color: rgba(30, 29, 29, 0.493);
+
+    backdrop-filter: blur(0.7px);
+
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+/* body {
+    width : 100%;
+    height : 100vh;
+    background-color: red;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position-x: top center ;
+    
+    background-image: url('./imgs/wallpaperflare.com_wallpaper\ \(6\).jpg');
+    z-index: 1000;
+} */
+
+/* Home page center Intro......................... */
+
+#home > .intro {
+    /* z-index : 2000; */
+
+    width  : 80%;
+    height : 400px;
+
+
+    color : white;
+    font-size : 20px;
+    /* background-color: orange; */
+
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    
+}
+
+#home > .intro > span{
+    display : block;
+}
+
+#home > .intro > h2{
+
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    font-size: 3rem;
+    font-weight: 800;
+    color : #cf1e82;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-bottom : 5px;
+    margin-top : 0;
+}
+
+#home > .intro > .name{
+
+    font-family:'Roboto Slab', serif;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    margin-bottom : 20px;
+    color : #f4f4f4;
+
+}
+
+#home > .intro > .develope{
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color : #f4f4f4;
+}
+
+#home > .intro > a{
+
+    
+    border : 3px solid rgb(172, 188, 44);
+    border-radius: 5px;
+
+    padding : 10px 20px;
+    margin-top : 40px;
+    transition: all 0.2s;
+    
+
+}
+
+#home > .intro > a > .btn1{
+    font-family: 'Anton', sans-serif;
+    font-size : 15px;
+    letter-spacing: 3px;
+
+    font-weight: 500;
+    color : #f4f4f4;
+
+   
+}
+
+#home > .intro > a:hover{
+    border-color: #e11589;
+    
+}
+
+/* SERVICE............................................................. */
+
+#service{
+    width : 100%;
+    height : 100vh;
+    /* background-color: rgb(71, 71, 155); */
+
+    background-image: url('./imgs/wallpaperflare.com_wallpaper\ \(10\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right ;
+
+   
+}
+
+#service >.service-lorem {
+    width : 40%;
+    height : 300px;
+
+    /* background-color: #cf1e82; */
+    margin : auto;
+    text-align: center;
+}
+
+.service-lorem > h1{
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size : 50px;
+    /* font-weight : bold; */
+    letter-spacing: 10px;
+    padding-top : 80px;
+    color: aqua;
+
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.service-lorem > p{
+
+    font-family: 'Cormorant', serif;
+    font-size : 17px;
+    font-weight: 400;
+    color : aqua;
+
+    letter-spacing: 1px;
+
+    padding-top: 20px;
+}
+
+/* ........................................Service Card...............................  */
+
+#service > .service-card {
+    
+    width : 100%;
+    height : 380px;
+
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+
+
+#service > .service-card > .card {
+
+    width : 250px;
+    height : 300px;
+    background-color: rgb(151, 97, 25);
+
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px aquamarine;
+
+    /* background-image: url('./imgs/wallpaperflare.com_wallpaper\ \(2\).jpg'); */
+    /* background-image: linear-gradient(rgba(25, 25, 221, 0.479),rgba(26, 182, 177, 0.427), rgba(231, 176, 25, 0.463)),url("./imgs/wallpaperflare.com_wallpaper\ \(2\).jpg"); */
+    background-image: linear-gradient(rgba(55, 55, 58, 0.667),rgba(10, 75, 6, 0.496), rgba(119, 12, 12, 0.605)),url("./imgs/wallpaperflare.com_wallpaper\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#service > .service-card > .card > .card-head {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color : rgb(46, 210, 222);
+
+    margin-left : 20px;
+    margin-top : 50px;
+}
+
+#service > .service-card > .card > .card-lorem{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color : rgb(46, 210, 222);
+
+    margin-left : 20px;
+    margin-top : 30px;
+}
+
+/* .........................about section............................  */
+
+#about{
+    width : 100%;
+    height : 100vh;
+    /* background-color: rgb(71, 71, 155); */
+
+    /* background-image: url('./imgs/6.jpg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right ; */
+
+    /* background-color: red; */
+
+    display : flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+#about > .about-container {
+    width : 80%;
+    height : 380px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: orange; */
+
+    
+}
+
+#about > .about-container .about-img{
+	position: relative;
+	border: 10px solid white;
+
+    /* background-color: #cf1e82; */
+    margin-right: 30px;
+    margin-top: 10px;
+   
+   
+}
+
+
+#about > .about-container .about-img::after{
+    content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 100%;
+	width: 100%;
+	border: 10px solid rgb(66, 29, 126);
+	z-index: -1;
+}
+
+#about > .about-container > .about-txt{
+    width : 100%;
+    height : 100%;
+    /* background-color: skyblue; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+
+}
+
+#about > .about-container > .about-txt > h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    /* margin-top: 5px; */
+    margin-top: none;
+}
+
+#about > .about-container > .about-txt > h3{
+    font-family:'Roboto Slab', serif;
+    font-size : 17px;
+    font-weight: 100;
+    letter-spacing: 1px;
+
+    padding-bottom: 10px;
+}
+
+#about > .about-container > .about-txt > p{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size :14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+    text-align: left;
+}
+
+/* ............................CONTACT>>>>>>>>>>>>>>>>>>>>> */
+
+#contact{
+    width : 100%;
+    height : 100vh;
+    /* background-color: brown ; */
+
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container{
+    width : 1100px;
+    height : 500px;
+    /* background-color : #cf1e82; */
+
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact_container > .contact_head {
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+
+.contact_container > .contact_head > span{
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    color: rgb(112, 78, 28);
+   
+}
+
+.contact_container > .contact_body {
+    width : 1000px;
+    height : 300px;
+    /* background-color: orange; */
+
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact_body > .contact_phone {
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 13px rgba(70, 46, 46, 0.668);
+    transition: all 0.5s;
+
+}
+
+.contact_body > .contact_phone:hover{
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 5px rgba(70, 46, 46, 0.795);
+
+    transform: scale(0.999);
+    
+}
+
+.contact_body > .contact_email {
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 13px rgba(70, 46, 46, 0.668);
+    transition: all 0.5s;
+    
+     
+}
+
+.contact_body > .contact_email:hover{
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 5px rgba(70, 46, 46, 0.795);
+
+    transform: scale(0.999);
+    
+}
+
+.contact_body > .contact_address {
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 13px rgba(70, 46, 46, 0.668);
+    transition: all 0.5s;
+
+}
+
+.contact_body > .contact_address:hover{
+
+    width : 300px;
+    height : 150px;
+    background-color: skyblue;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow : 0px 0px 5px rgba(70, 46, 46, 0.795);
+
+    transform: scale(0.999);
+    
+}
+
+.contact_phone > .phone_logo{
+    padding-left: 30px;
+}
+
+.contact_phone > .phone_info{
+    padding-left: 25px;
+}
+
+.contact_phone > .phone_info > .phone_header h3{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size : 28px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+    padding-bottom: 15px;
+
+}
+
+.contact_phone > .phone_info > .phone_no span{
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+
+/* .......................................Email.......................... */
+
+.contact_email > .email_logo{
+    padding-left: 30px;
+}
+
+.contact_email > .email_info{
+
+    padding-left: 25px;
+    /* background-color: red; */
+}
+
+.contact_email> .email_info > .email_header h3{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size : 28px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+    padding-bottom: 15px;
+
+}
+
+.contact_email > .email_info > .email_no span{
+
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    
+}
+
+
+/* ............................................ADDRESS...................................... */
+
+.contact_address > .address_logo{
+    padding-left: 30px;
+}
+
+.contact_address > .address_info{
+    padding-left: 25px;
+}
+
+.contact_address > .address_info > .address_header h3{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size : 28px;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+    padding-bottom: 15px;
+
+}
+
+.contact_address > .address_info > .address_no span{
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+
+/* ...........................PROJECT.................... */
+
+#project{
+    width : 100%;
+    height : 100vh;
+
+    /* background-color: #cf1e82; */
+
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    /* justify-content: center; */
+}
+
+#project > .project_header{
+    font-family: 'Rajdhani', sans-serif;
+    font-size : 70px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    margin-top : 60px;
+
+}
+
+#project .project1 {
+
+    width : 90%;
+    height: 263px;
+
+    background-color: #404B58;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#project .project1 > .project1_txt{
+    width : 50%;
+    height : 100%;
+    font-size: 15px;
+
+    /* background-color: brown; */
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+#project .project1 > .project1_txt > h1{
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    color : #f4f4f4;
+
+    /* background-color: orange; */
+}
+
+#project .project1 > .project1_txt > p{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 25px;
+    line-height: 30px;
+    color : #f4f4f4;
+}
+
+.project1_img{
+
+    width : 50%;
+    height :100%;
+    /* background-color: skyblue ; */
+
+    background-image: url(./imgs/Screenshot\ 2023-07-28\ 214255.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+/* ........................PROJECT2........................ */
+
+#project .project2 {
+
+    width : 90%;
+    height: 260px;
+
+    background-color: #404B58;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.project2_img{
+
+    width : 50%;
+    height :100%;
+    /* background-color: skyblue ; */
+
+    background-image: url(./imgs/Screenshot\ 2023-07-28\ 214754.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#project .project2 > .project2_txt{
+    width : 50%;
+    height : 100%;
+    font-size: 15px;
+
+    /* background-color: brown; */
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#project .project2 > .project2_txt > h1{
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    color : #f4f4f4;
+
+    /* background-color: orange; */
+}
+
+#project .project2 > .project2_txt > p{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 25px;
+    line-height: 30px;
+    color : #f4f4f4;
+}
+
+
+
